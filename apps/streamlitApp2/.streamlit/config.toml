@@ -1,0 +1,3 @@
+[browser]
+serverAddress = "miaplicacion2.local"
+gatherUsageStats = false

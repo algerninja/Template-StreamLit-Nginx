@@ -1,0 +1,25 @@
+version: "3"
+
+services:
+  streamlit:
+    build: ./apps/streamlitApp1
+    volumes:
+      - ./apps/streamlitApp1:/app
+    restart: always
+
+  # streamlit2:
+  #   build: ./apps/streamlitApp2
+  #   volumes:
+  #     - ./apps/streamlitApp2:/app
+  #   restart: always
+
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80" # Expone el puerto 80 del contenedor al puerto 80 del host
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf # Monta tu configuración de Nginx
+    restart: always
+    depends_on:
+      - streamlit
+      # - streamlit2

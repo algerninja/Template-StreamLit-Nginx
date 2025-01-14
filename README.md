@@ -16,7 +16,7 @@ and add the domain that we will use as the following example
 
 ```bash
 [browser]
-serverAddress = “miaplicacion.local” # Change for the domain you will use
+serverAddress = "miaplicacion.local" # Change for the domain you will use
 gatherUsageStats = false
 ```
 
@@ -63,13 +63,13 @@ and add the domain that we will use as the following example
 
 ```apps/streamlitApp1/.streamlit/config.toml
 [browser]
-serverAddress = “miaplicacion.local” # Change to the domain we will use
+serverAddress = "miaplicacion.local" # Change to the domain we will use
 gatherUsageStats = false
 ```
 
 ```apps/streamlitApp2/.streamlit/config.toml
 [browser]
-serverAddress = “miaplicacion2.local” # Change to the domain we will use
+serverAddress = "miaplicacion2.local" # Change to the domain we will use
 gatherUsageStats = false
 ```
 
